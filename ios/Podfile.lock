@@ -1,0 +1,31 @@
+PODS:
+  - Capacitor (3.1.2):
+    - CapacitorCordova
+  - CapacitorCordova (3.1.2)
+  - HCaptcha (1.5.2):
+    - HCaptcha/Core (= 1.5.2)
+  - HCaptcha/Core (1.5.2)
+
+DEPENDENCIES:
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+  - HCaptcha
+
+SPEC REPOS:
+  trunk:
+    - HCaptcha
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Capacitor: 9d06cf7a97c4752037907979baade2f79f2800fa
+  CapacitorCordova: b8e7144f5dad047965035dbed9c9855b1f0f64e8
+  HCaptcha: 1f03d8d1b8bacaebce9be1692de3bbfd5283cc13
+
+PODFILE CHECKSUM: 3a91a51082ffe75aa42f92b30e16c63ddf71e9f5
+
+COCOAPODS: 1.10.1
