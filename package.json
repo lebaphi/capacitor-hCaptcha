@@ -34,8 +34,7 @@
     "swiftlint": "node-swiftlint",
     "build": "npm run clean && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
-    "watch": "tsc --watch",
-    "postinstall": "npm run build"
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
