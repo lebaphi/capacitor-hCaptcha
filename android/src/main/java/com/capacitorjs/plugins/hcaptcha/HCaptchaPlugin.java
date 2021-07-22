@@ -29,7 +29,7 @@ public class HCaptchaPlugin extends Plugin {
                     String userResponseToken = response.getTokenResult();
                     Log.d("MainActivity", "hCaptcha success: " + userResponseToken);
                     JSObject ret = new JSObject();
-                    ret.put("result", "success");
+                    ret.put("status", "success");
                     ret.put("data", userResponseToken);
                     call.resolve(ret);
                 }
@@ -38,7 +38,7 @@ public class HCaptchaPlugin extends Plugin {
             public void onFailure(HCaptchaException e) {
                 Log.d("MainActivity", "hCaptcha failed: " + e.getMessage());
                 JSObject ret = new JSObject();
-                ret.put("result", "failed");
+                ret.put("status", "failed");
                 ret.put("data", e.getMessage());
                 call.resolve(ret);
             }
