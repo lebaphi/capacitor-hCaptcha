@@ -5,5 +5,9 @@ export interface HCaptchaPlugin {
      */
     verifyCaptcha(options: {
         siteKey: string;
-    }): Promise<any>;
+    }): Promise<HCaptchaResult>;
+}
+export interface HCaptchaResult {
+    status: 'success' | 'failed';
+    data: any;
 }
